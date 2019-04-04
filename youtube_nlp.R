@@ -5,7 +5,9 @@
 packages <- c("tidyverse", "tidytext", "tm", "topicmodels")
 lapply(packages, require, character.only=T)
 
-# Get YouTube top 5,000 dataset (https://www.kaggle.com/mdhrumil/top-5000-youtube-channels-data-from-socialblade#data.csv)
+# Get YouTube top 5,000 dataset
+# https://www.kaggle.com/mdhrumil/top-5000-youtube-channels-data-from-socialblade#data.csv
+
 path <- "C:\\Users\\Eva\\Rstudio"
 yt_data <- read_csv(paste0(path, "./data.csv"))
 names(yt_data) <- str_replace_all(names(yt_data), c(" " = "_"))
