@@ -2,7 +2,7 @@
 # NLP on top 5,000 YouTube channels #
 #####################################
 
-packages <- c("tidyverse", "topicmodels")
+packages <- c("tidyverse", "tidytext", "tm", "topicmodels")
 lapply(packages, require, character.only=T)
 
 # Get YouTube top 5,000 dataset (https://www.kaggle.com/mdhrumil/top-5000-youtube-channels-data-from-socialblade#data.csv)
